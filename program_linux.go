@@ -27,7 +27,7 @@ func Tuning() error {
 		return err
 	}
 
-	if rLimit.Max < defaultFileMax {
+	if rLimit.Max < defaultFileMax || rLimit.Cur < defaultFileMax {
 		rLimit.Max = defaultFileMax
 		rLimit.Cur = defaultFileMax
 	}
