@@ -4,6 +4,7 @@
 package go_program_tuning
 
 import (
+	_ "go.uber.org/automaxprocs"
 	"syscall"
 )
 
